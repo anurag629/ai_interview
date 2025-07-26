@@ -178,7 +178,7 @@
     @apply w-fit !bg-primary-200 !text-gray-900 hover:!bg-primary-200/80 !rounded-full !font-bold px-5 cursor-pointer min-h-10;
   }
   .btn-secondary {
-    @apply w-fit !bg-gray-200 !text-primary-200 hover:!bg-gray-300 !rounded-full !font-bold px-5 cursor-pointer min-h-10;
+    @apply w-fit !bg-gray-200 !text-gray-900 hover:!bg-gray-300 !rounded-full !font-bold px-5 cursor-pointer min-h-10;
   }
 
   .btn-upload {
@@ -213,7 +213,7 @@
     @apply flex sm:flex-row flex-col gap-10 items-center justify-between w-full;
 
     h3 {
-      @apply text-center text-primary-100 mt-5;
+      @apply text-center text-gray-900 mt-5;
     }
 
     .card-interviewer {
@@ -257,8 +257,20 @@
     }
   }
 
+  .header {
+    @apply flex items-center justify-between;
+  }
+
+  .nav-link {
+    @apply text-gray-700 hover:text-gray-900 transition-colors;
+  }
+
   .auth-layout {
-    @apply flex items-center justify-center mx-auto max-w-7xl min-h-screen max-sm:px-4 max-sm:py-8;
+    @apply flex flex-col items-center justify-center mx-auto max-w-7xl min-h-screen max-sm:px-4 max-sm:py-8;
+
+    main {
+      @apply w-full;
+    }
   }
 
   .root-layout {
